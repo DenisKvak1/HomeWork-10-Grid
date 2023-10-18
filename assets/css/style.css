@@ -2,5 +2,80 @@
         box-sizing: border-box;
     }
     body {
-        margin:0
+        font-family: 'Roboto';
+    }
+    /* Start Component CSS GRID */
+    .component{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1.3fr 1fr 1fr 1fr;
+        gap: 15px;
+        box-shadow: 0px 0px 5px rgb(173, 173, 173);
+        padding: 10px;
+        width: 860px;
+    }
+    .component__сontent__bottom{
+        grid-column: 2/5;
+    }
+    .component__main{
+        grid-row: 1/3;
+    }
+    /* End Component CSS GRID */
+    .component h3{
+        font-weight: 400;
+        color: #61696E;
+    }
+    /* Start Main Styles*/
+     .component__main{
+        box-shadow: 0px 0px 5px rgb(173, 173, 173);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 15px;
+    }
+    .component__button{
+        width: 180px;
+        height: 35px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 0.5px;
+        background-color: #37B686;
+        color: white;
+        font-size: 15px;
+    }
+    .component__topBlock h1, .component__topBlock h3,.component__main h2, .component__main h3{
+        margin: 3px;
+    }
+    .component img{
+        width: 130px;
+    }
+    /* End Main Styles*/
+
+    /* Start Bottom Styles*/
+    .component__сontent__bottom{
+        padding: 17px 25px;
+        box-shadow: 0px 0px 5px rgb(173, 173, 173);
+    }
+    .component__сontent__bottom h2{
+        font-weight: 400;
+        text-align: center;
+    }
+    .component__сontent__bottom p{
+        color: #949698;
+        font-weight: 500;
+        text-align: justify;
+    }
+    /* End Bottom Styles*/
+    .component__topBlock{
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 0px 5px rgb(173, 173, 173);
+    }
+    .component__topBlock h1{
+        color: #40B98B;
     }
