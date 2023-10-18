@@ -12,8 +12,7 @@
         gap: 15px;
         box-shadow: 0px 0px 5px rgb(173, 173, 173);
         padding: 13px;
-        min-width: 574px;
-        max-width: 860px;
+        width: 860px;
     }
     .component__сontent__bottom{
         grid-column: 2/5;
